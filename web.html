@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugen Hotspot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            margin: 10px 0;
+        }
+        .instructions {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        .instructions p {
+            margin: 5px 0;
+        }
+        .packages {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .package {
+            background-color: #7fda0f;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .package p {
+            margin: 5px 0;
+        }
+        .form-group {
+            margin: 20px 0;
+        }
+        .form-group input {
+            padding: 10px;
+            width: 80%;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 50%;
+        }
+        .btn-reconnect {
+            background-color: orange;
+            color: white;
+        }
+        .btn-voucher {
+            background-color: aqua;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Sign in to Jugen Hotspot 0717010880</h1>
+        <h2>JUGEN WIFI LOGIN</h2>
+        <div class="instructions">
+            <h3>How To Purchase:</h3>
+            <p>1. Tap on your preferred package.</p>
+            <p>2. Enter your phone number.</p>
+            <p>3. Click "PAY NOW".</p>
+            <p>4. Enter your M-Pesa pin, wait for 30sec for M-Pesa authentication.</p>
+            <p>(CUSTOMER CARE CONTACT 0717010880)</p>
+        </div>
+
+        <div class="packages">
+            <div class="package">
+                <p>1 hour</p>
+                <p>KSH: 10/-</p>
+                <p>MAX 4mbps</p>
+            </div>
+            <div class="package">
+                <p>3 hours</p>
+                <p>KSH: 15/-</p>
+                <p>MAX 4mbps</p>
+            </div>
+            <div class="package">
+                <p>12 hours</p>
+                <p>KSH: 20/-</p>
+                <p>MAX 4mbps</p>
+            </div>
+            <div class="package">
+                <p>24 hours</p>
+                <p>KSH: 30/-</p>
+                <p>MAX 4mbps</p>
+            </div>
+            <div class="package">
+                <p>2 days</p>
+                <p>KSH: 50/-</p>
+                <p>MAX 4mbps</p>
+            </div>
+            <div class="package">
+                <p>1 week</p>
+                <p>KSH: 170/-</p>
+                <p>MAX 4mbps</p>
+            </div>
+            <div class="package">
+                <p>1 month</p>
+                <p>KSH: 550/-</p>
+                <p>MAX 4mbps</p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="mpesa-code">Reconnect account</label>
+            <input type="text" id="mpesa-code" placeholder="Enter Mpesa Code you paid with">
+            <button class="btn btn-reconnect">Reconnect</button>
+        </div>
+
+        <div class="form-group">
+            <label for="voucher-code">Voucher recharge</label>
+            <input type="text" id="voucher-code" placeholder="Enter voucher code">
+            <button class="btn btn-voucher">Activate voucher</button>
+        </div>
+    </div>
+</body>
+</html>
